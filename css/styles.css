@@ -1,0 +1,32 @@
+/* (A) 3 COLUMNS PER ROW */
+#grid {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+    grid-gap: 10px;
+  }
+  /* (B) 1 COL ON SMALL SCREENS */
+  @media screen and (max-width:768px) {
+    #grid { grid-template-columns: auto auto; }
+  }
+  /* (C) OPTIONAL FOR THE CELLS */
+  .head, .cell { padding: 10px; }
+  .head {
+    font-weight: bold;
+    border: 1px solid #f18e8e;
+    background: #ffbfbf;
+  }
+  .cell {
+    border: 1px solid #c2ba3c;
+    background: #f8ffde;
+    width: 75px
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+#screen {
+  display: screen;
+  grid-template-columns: auto; 
+  grid-gap: 10px;
+  border: 1px solid #c2ba3c;
+  text-align: center;
+}
