@@ -9,7 +9,7 @@
     #grid { grid-template-columns: auto auto; }
   }
   /* (C) OPTIONAL FOR THE CELLS */
-  .head, .cell { padding: 10px; }
+  .head, .cell, .cell_red { padding: 10px; }
   .head {
     font-weight: bold;
     border: 1px solid #f18e8e;
@@ -23,6 +23,14 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .cell_red {
+    border: 1px solid #c2ba3c;
+    background: #e42f2f;
+    width: 75px
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 #screen {
   display: screen;
   grid-template-columns: auto; 
@@ -30,3 +38,7 @@
   border: 1px solid #c2ba3c;
   text-align: center;
 }
+
+
+
+
