@@ -7,6 +7,7 @@ class clsSala{
         this.CreateAsientos();
     }
 //////////////////////////////////////////////////////
+//////////////////////////////////////////////////////
     CreateAsientos(){
         for (var i=0; i<this.num_asientos; i++){
             var tA=new clsAsiento(i);

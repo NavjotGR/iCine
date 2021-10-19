@@ -1,5 +1,10 @@
 var mG
-//var d
+
+
+var queryString = window.location.search;
+var urlParams = new URLSearchParams(queryString);
+var anuncioParam = urlParams.get('get_num');
+
 
 /* d = new clsDebug();
 d.log("Que tal?");
@@ -11,7 +16,7 @@ mG.totext(); */
 
 window.onload= function(){
     if (document.readyState=="complete"){
-        mG = new clsCinesa();
+        mG = new clsiCine();
         //mG.totext();
     }
 }

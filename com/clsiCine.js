@@ -1,4 +1,4 @@
-class clsCinesa{
+class clsiCine{
     constructor (){
         this.cine;
         //this.CreateCines;
