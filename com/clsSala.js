@@ -27,4 +27,20 @@ class clsSala{
     EraseAsientos(){
         this.containerHTML.innerHTML="";
     }
+
+    Draw(){
+        this._html_cell=document.createElement("div");
+        this._html_cell.className="sala";
+        this._html_cell.innerHTML="Sala:"+this.number;
+        this._html_cell.addEventListener ("click",this.onclick.bind(this));
+        this._html_cell.id="sala"+this.number;
+        this.containerHTML.appendChild(this._html_cell);
+    }
+
+    onclick(){
+        console.log("Sala:"+ this._html_cell.id);
+        this.EraseAsientos;
+        this.DrawAsientos;
+    }
+
 }

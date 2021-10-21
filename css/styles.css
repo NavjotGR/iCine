@@ -31,6 +31,14 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .sala {
+    border: 1px solid #c2ba3c;
+    background: #f8ffde;
+    width: 75px
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 #screen {
   display: screen;
   grid-template-columns: auto; 
