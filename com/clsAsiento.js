@@ -1,7 +1,7 @@
 class clsAsiento{
     constructor(pNumberAsiento){
-        this.number=pNumberAsiento;
-        this._occupied=Math.round(Math.random()); // 0 = libre, 1 = ocupado, 2 = pendiente pago, 3 = reservado.
+        this._number=pNumberAsiento;
+        this._occupied=0; /* Math.round(Math.random()); 0 = libre, 1 = ocupado, 2 = pendiente pago, 3 = reservado. */
         this._html_cell;
         this.x;
         this.y;
@@ -16,7 +16,7 @@ class clsAsiento{
     Draw(){
         this._html_cell=document.createElement("div");
         let cell=this._html_cell;
-        cell.innerHTML="Seat:"+this.number;
+        cell.innerHTML="Seat:"+this._number;
 
         if (this.IsOccupied()){
             this.reservarAsiento();
@@ -26,13 +26,14 @@ class clsAsiento{
 
         cell.addEventListener ("click",this.onclick.bind(this));
 
-        cell.id="a"+this.number;
+        cell.id="a"+this._number;
         return cell;
     }
 
     onclick(){
         console.log("Seat:"+ this._html_cell.id);
         this.reservarAsiento();
+        localStorage.setItem(this._number,this._occupied);
     }
 
     IsOccupied(){

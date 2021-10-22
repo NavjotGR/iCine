@@ -9,7 +9,7 @@ class clsSala{
 //////////////////////////////////////////////////////
 //////////////////////////////////////////////////////
     CreateAsientos(){
-        for (var i=0; i<this.num_asientos; i++){
+        for (var i=1; i<this.num_asientos; i++){
             var tA=new clsAsiento(i);
             this.asientos.push(tA);
         }
@@ -39,8 +39,7 @@ class clsSala{
 
     onclick(){
         console.log("Sala:"+ this._html_cell.id);
-        this.EraseAsientos;
-        this.DrawAsientos;
+        this.EraseAsientos();
+        this.DrawAsientos();
     }
-
 }
