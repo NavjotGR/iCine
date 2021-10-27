@@ -10,7 +10,7 @@ class clsSala{
 //////////////////////////////////////////////////////
     CreateAsientos(){
         for (var i=1; i<this.num_asientos; i++){
-            var tA=new clsAsiento(i);
+            var tA=new clsAsiento(i,this.number);
             this.asientos.push(tA);
         }
     }

@@ -32,6 +32,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .cell_red_myseat {
+    border: 1px solid #c2ba3c;
+    background: #e42f2f;
+  }
   .sala {
     border: 1px solid #c2ba3c;
     background: #f8ffde;

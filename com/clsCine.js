@@ -12,8 +12,10 @@ class clsCine{
         /* this.sala2=new clsSala("2", 17) */
         /* this.sala2.push(sala2); */
         for (var i=1; i<3+1; i++){
-            var tsala=new clsSala(i, 15);
-            this.salas.push(tsala);
+            var sala1=new clsSala(i++, 14);
+            var sala2=new clsSala(i++, 6);
+            var sala3=new clsSala(i++, 25);
+            this.salas.push(sala1,sala2,sala3);
         }
     }
 //////////////////////////////////////////////////////
